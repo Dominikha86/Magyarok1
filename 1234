@@ -1,1 +1,57 @@
+git commit --help
+git init
+git clone https://github.com/bmeaut/snippets.git
+git status
+git add egyfajl.txt
+git add .
+git commit -m "Üzenet"
+git commit
+git log
+gitk --all
+git diff
+git checkout -b UjBranchnev
+git checkout -b UjBranchnev a1b2c3
+git checkout master
+git branch --delete NemKellBranch
+git reset --hard
+git reset --hard a1b2c3
+git push
+git pull
+git fetch
+git fetch --all
+git push origin master:origin/master
+git merge MasikBranch
+git rebase MasikBranch
+git mergetool
+git rebase --continue
+git cherry-pick 0f543fe
+git rebase -i 5b74f4
+pick e21eac9 UjSor
+pick 9323585 UjSor2
+pick 55c8cf6 UjSor3
+
+# Rebase 5b74f4a..55c8cf6 onto 5b74f4a (3 command(s))
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+pick e21eac9 UjSor
+s 9323585 UjSor2
+s 55c8cf6 UjSor3
+git config --global core.editor "nano"
+git config --global merge.tool kdiff3
+git config --global mergetool.kdiff3.cmd '"C:\\Program Files (x86)\\KDiff3\\kdiff3" $BASE $LOCAL $REMOTE -o $MERGED'
+
+
+
 
